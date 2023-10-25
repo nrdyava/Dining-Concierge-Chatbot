@@ -66,7 +66,7 @@ def lambda_handler(event, context):
         'host': HOST,
         'port': 443
     }],
-        http_auth=('master', 'Columbia123@'),
+        http_auth=('master', 'masked_password'),
         use_ssl=True,
         verify_certs=True,
         connection_class=RequestsHttpConnection)
@@ -142,7 +142,7 @@ def lambda_handler(event, context):
                 'Data': email_to_send
             },
             ReturnPathArn='',
-            Source='naveen.dyava@columbia.edu',
+            Source='masked_email',
             SourceArn=''
         )
         logger.debug("response - %s", json.dumps(email_resp))
