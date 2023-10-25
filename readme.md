@@ -1,3 +1,3 @@
 #Architecture
 
-![Architecture](https://raw.githubusercontent.com/naveenrd/ultrasound-fetus-segmentation/master/other/segmented_image.jpg](https://github.com/nrdyava/Dining-Concierge-Chatbot/blob/main/Architecture.png?raw=true)https://github.com/nrdyava/Dining-Concierge-Chatbot/blob/main/Architecture.png?raw=true)
+![Architecture](https://github.com/nrdyava/Dining-Concierge-Chatbot/blob/6a27b197febac4594b89b7443fb3bb8640b2f953/Architecture.png)
