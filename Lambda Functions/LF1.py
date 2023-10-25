@@ -20,7 +20,7 @@ def push2sqs(slots):
     """The lambda handler"""
     logger.debug("Recording with event %s", slots)
     try:
-        u = 'https://sqs.us-east-1.amazonaws.com/329147244489/DCCBSQS'
+        u = 'https://sqs.us-east-1.amazonaws.com/<masked-information>'
         logging.debug("Got queue URL %s", u)
         resp = SQS.send_message(
             QueueUrl=u,
