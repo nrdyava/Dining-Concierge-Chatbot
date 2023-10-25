@@ -8,8 +8,8 @@ def lambda_handler(event, context):
     print(event)
     msg_from_user = event['messages'][0]['unstructured']['text']
     response = client.recognize_text(
-        botId='FMC5KX0YWZ',
-        botAliasId='YIEIRFIPV1',
+        botId='**********',
+        botAliasId='**********',
         localeId='en_US',
         sessionId='testuser',
         text=msg_from_user
