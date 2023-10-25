@@ -12,13 +12,13 @@ logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 REGION = 'us-east-1'
-HOST = 'search-restaurants-sse5klcfy4jsopiks5kjqs2z3y.us-east-1.es.amazonaws.com'
+HOST = 'search-restaurants-masked_information.us-east-1.es.amazonaws.com'
 INDEX = 'restaurants'
 
 
 def getSQSMsg():
     SQS = boto3.client("sqs")
-    url = 'https://sqs.us-east-1.amazonaws.com/329147244489/DCCBSQS'
+    url = 'https://sqs.us-east-1.amazonaws.com/masked-information'
     response = SQS.receive_message(
         QueueUrl=url,
         AttributeNames=['SentTimestamp'],
